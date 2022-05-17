@@ -1,0 +1,29 @@
+    body {
+        background-color: rgb(214, 166, 206);
+    }
+    
+    .header {
+        padding: 40px;
+        padding-left: 0px;
+    }
+    
+    .rectangle {
+        padding: 20px;
+        width: 1300px;
+        margin: 10px auto;
+        background: #8b4a76db;
+        border-radius: 10px;
+        box-shadow: 0 0 10px;
+    }
+    
+    .kotak {
+        margin: 50px auto;
+        width: 300px;
+        padding: 10px;
+        background: #8b4a76db;
+        box-shadow: 0 0 10px;
+    }
+    
+    H1 {
+        font-family: monospace;
+    }
