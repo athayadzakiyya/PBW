@@ -15,9 +15,32 @@
 <body>
 <div class="rectangle" align="center">
         <H1>Total order</H1>
+        <table class="table1" align="center">
+        <table border="2" cellspacing="2" cellpadding="15" align="center" width="1200">
 
+            <ul>
+                <thead>
 
-        Spagetti = Rp. 35.000
+                    <body>
+                        <tr>
+                            
+                            <td><b>NAMA MAKANAN</b></td>
+                            <td><b>HARGA</b></td>
+                           
+                        </tr>
+                      
+                        @foreach($run as $good)
+                        <tr>
+                          <td>{{ $good->NAMA_MAKANAN }}</td>
+                          <td>{{ $good->HARGA }}</td>
+                        </tr>
+                        <td><b> TOTAL ={{$good->HARGA}}</b></td>
+                        @endforeach
+                    </body>
+                </thead>
+            </ul>
+        </table>
+
 
 </div>
 

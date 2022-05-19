@@ -21,21 +21,24 @@
         Enjoy the sensation of the delicious food in<br> La Comida Restaurant with your family
     </center>
     
+    <form action="order" method ="head">
     <div class="kotak">
-    @csrf
+    <!-- {{csrf_field()}} -->
     <!-- <label for="name"></label> -->
-				<input type="name" required placeholder="enter name"/>
+				<input type=text, name="Nama",required="required" placeholder="enter name">
     </div>
     
     <div class="kotak">
     <!-- <label for="table"></label> -->
-				<input type="table" required placeholder="enter number of table"/>
+				<input type=text, name="meja", required="required" placeholder="enter number of table">
     </div>
+        <!-- <input type="submit" value="Order"> -->
     
     <a href="order">
-    <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-secondary me-md-5" type="button">Order Here!!</button>
-    </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary me-md-5" type="button">Order Here!!</button>
+        </div>
     </a>
+</form>
 </body>
 </html>

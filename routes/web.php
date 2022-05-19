@@ -15,7 +15,7 @@ use App\Http\Controllers\OrderController;
 */
 
 Route::get('/', function () {
-    return view('Home');
+    return view('/Home');
 });
 
 Route::get('/Home', [OrderController::class, 'Home']);
@@ -23,5 +23,9 @@ Route::get('/Home', [OrderController::class, 'Home']);
 Route::get('/order', [OrderController::class, 'order']);
 
 Route::get('/pesanan', [OrderController::class, 'Pesanan']);
+
+Route::post('/pesanan', [OrderController::class, 'store']);
+
+Route::post('/Home', [OrderController::class, 'dot']);
 
 Route::get('/closing', [OrderController::class, 'Closing']);

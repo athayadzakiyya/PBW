@@ -25,25 +25,53 @@
                             <td><b>NOMOR</b></td>
                             <td><b>NAMA MAKANAN</b></td>
                             <td><b>HARGA</b></td>
-                            <td><b>PESAN</b></td>
+                            <!-- <td><b>PESAN</b></td> -->
                         </tr>
+                        @foreach($order as $od)
                         <tr>
-                            <td>1</td>
-                            <td>Spagetti</td>
-                            <td>Rp. 35.000</td>
-                            <td><input type="checkbox" name="chk4"></td>
+                            <td>{{ $od->NOMOR }}</td>
+                            <td>{{ $od->NAMA_MAKANAN }}</td>
+                            <td>RP. {{ $od->HARGA }}</td>
+                            <!-- <td>RP. {{ $od->checkbox }}</td> -->
+                            <!-- <td><input type="checkbox" name="chk"></td> -->
                         </tr>
-                           
+                           @endforeach
                     </body>
                 </thead>
             </ul>
         </table>
          </div>
+        
+         <div class="rectangle" align="center">
+             Silahkan Masukkan nama makanan dan harga nya
+         <form action="pesanan" method ="post">
+        {{csrf_field()}}
+        <table class="table1" align="center">
+        <table border="2" cellspacing="2" cellpadding="15" align="center" width="1200">
+
+            <ul>
+                <thead>
+
+                    <body>
+                        <tr>
+                            <td><b>NAMA MAKANAN</b></td>
+                            <td><b>HARGA</b></td>
+                        </tr>
+                        <tr>
+                           <td><input type=text, name="NAMA_MAKANAN", required="required"></td>
+                           <td><input type=text, name="HARGA", required="required"></td>
+                           <td><input type="submit" value="Order"></td>
+                        </tr>
+                    </body>
+                </thead>
+            </ul>
+         </form>
+         </div>
 
         <a href="pesanan">
-        <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-secondary me-md-5" type="button">Order</button>
-        </div>
+        <!-- <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-secondary me-md-5" type="button">Order</button> -->
+        <!-- </div> -->
         </a>   
 </body>
 </html>

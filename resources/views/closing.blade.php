@@ -14,7 +14,8 @@
 <body>
 <div class="rectangle" align="center">
     <center>
-        <H2> Thank you for placing order!!<br>
+        <H2>
+            Thank you for placing order!!<br>
             Please download the file below as proof of payment <br>
              confirmation at the cashier. </H2>
         </center>
